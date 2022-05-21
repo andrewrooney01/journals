@@ -12,9 +12,10 @@ const getGoals = (req,res) => {
 // @access
 const setGoal = (req,res) => {
     if(!req.body.text) {
-        res.status(400) // using mongoose interacting with the database, which gives back a promise
-        throw new Error('Please add a text field')
+        res.status(400)
+        throw new Error('Please add a new text field')
     }
+    
     res.status(200).json({message: 'Set Goal'})
 }
 
