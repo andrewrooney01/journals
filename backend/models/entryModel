@@ -1,12 +1,21 @@
 const mongoose = require('mongoose')
 
 const entrySchema = mongoose.Schema({
-    feeling: {
-        type: String,
-        required: [true, 'Please add a text value']
-    }
-    }, {
-        timestamps: true
-    })
+    feeling: { 
+        type: String, 
+        required: [true, 'Please add a feeling (string) value.'] 
+    }, 
+    thought: { 
+        type: String, 
+        required: [true, 'Please add a thought (string) value.'] 
+    },
+    timestamp: {
+        type: Date,
+        default: Date.now,
+		immutable: true,
+		required: true,
+	}
+})
+
 
 module.exports = mongoose.model('Entry', entrySchema)
