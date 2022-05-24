@@ -1,16 +1,19 @@
+The Journal Project
+Andrew Rooney
 
-
-
-Following this youtube series: 
+References:
 - https://www.youtube.com/watch?v=enopDSs3DRw&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=2
 
 
 
 
-
+Quick Notes:
 --npm init
 
-How to commit to this project
+Commit refresher:
 -- git init
 --git add .
 --git commit -m "<message>"
+--git branch -M main 
+--git push -u origin main                                                          
+                                                        
